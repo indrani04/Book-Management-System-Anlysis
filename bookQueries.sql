@@ -32,8 +32,29 @@ GROUP BY p.Name
 ORDER BY TotalBooksPublished DESC
 LIMIT 10;
 
+-- Average Rating of Books by Publisher
+SELECT p.Name AS PublisherName, AVG(br.Rating) AS AvgRating
+FROM book b
+JOIN bookreview br ON b.ISBN = br.ISBN
+JOIN publisher p ON b.PublisherID = p.PublisherID
+GROUP BY p.PublisherID;
+
 -- Query to analyze reviewer sentiments by calculating average rating per reviewer
 SELECT r.Name, AVG(br.Rating) AS AvgRating
 FROM reviewer r
 LEFT JOIN bookreview br ON r.ReviewerID = br.ReviewerID
 GROUP BY r.Name;
+
+-- Top Owners by Number of Books Owned
+SELECT o.FirstName, o.LastName, COUNT(*) AS TotalBooksOwned
+FROM ownersbook ob
+JOIN owner o ON ob.OwnerID = o.OwnerID
+GROUP BY o.OwnerID
+ORDER BY TotalBooksOwned DESC
+LIMIT 10;
+
+-- Average Price of Books Owned by Owner
+SELECT o.FirstName, o.LastName, AVG(ob.Price) AS AvgBookPrice
+FROM ownersbook ob
+JOIN owner o ON ob.OwnerID = o.OwnerID
+GROUP BY o.OwnerID;
