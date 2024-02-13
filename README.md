@@ -1,5 +1,6 @@
 # Book-Management-System-Anlysis
-The "Book Management System Analysis" project involves examining a dataset consisting of tables related to a book management system.The objective of this project is to perform various analyses and gain insights into different aspects of the book management system. This includes analyzing book sales, author performance, Publisher Analysis, Category Analysis and Owner Analysis. By leveraging SQL queries and data visualization techniques, we aim to uncover patterns, trends, and opportunities for improvement within the book management system.
+The "Book Management System Analysis" project involves examining a dataset consisting of tables related to a book management system.The objective of this project is to perform various analyses and gain insights into different aspects of the book management system. By analyzing this dataset, we can gain insights into various aspects of the book management system, such as popular authors, bestselling books, book categories, book conditions, reviewer sentiments, and publisher performance.
+
 
 # Data Descrition
 The database schema represents a book management system, including tables for authors, books, book conditions, book reviews, categories, owners, publishers, reviewers, and states.
