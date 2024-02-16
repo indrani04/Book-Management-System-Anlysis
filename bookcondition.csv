@@ -1,0 +1,6 @@
+Ranks,Description,FullDescription
+1,Bad,"Not much is left of the book. Parts are not legible, cover may be missing."
+2,Poor,"Pages may be missing. Many pages may be marked."
+3,Average,"Less than 3 pages missing. Small markings. Cover intact."
+4,Good,"No pages missing, may be marked on less than 5 pages, not obscuring text or diagrams. Cover is in good condition"
+5,Excellent,"Like new."
